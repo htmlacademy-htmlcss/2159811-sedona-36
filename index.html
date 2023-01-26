@@ -2,50 +2,143 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
 <header class="main-header">
-  <nav class="navigation"></nav>
+  <nav class="navigation">
+    <div class="logo-of-sedona">
+        <a class="navigation-link">
+          <img class="logo" src="#" alt="Логотип города Седона.">
+        </a>
+    </div>
     <ul class="navigation-list">
-      <li class="logo-sedona">
-        <img class="logo" src="#" alt="Логотип города Седона">
+        <li class="navigation-item">
+        <a class="navigation-link">Главная</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="main-page.html">Главная</a>
+        <a class="navigation-link" href="#">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="about-sedona.html">О Седоне</a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="hotels.html">Гостиницы</a>
+        <a class="navigation-link" href="index_hotels.html">Гостиницы</a>
       </li>
     </ul>
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
         <a class="navigation-link" href="#">
-          <span class="visually-hidden">Поиск</span>
+          <span class="visually-hidden">Поиск.</span>
         </a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">
-          <span class="visually-hidden">Мне нравится</span>
+          <span class="visually-hidden">Мне нравится.</span>
         </a>
         <span class="number-of-likes">12</span>
       </li>
-      <!--это вообще походу кнопка!-->
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">Вход</span>
-        </a>
+        <a class="navigation-link wanted-button"  href="index_hotels.html">Хочу сюда!</a>
       </li>
-      <!--это вообще походу кнопка!-->
     </ul>
   </nav>
 </header>
 
 <main class="main-index">
+  <section class="welcome-to-sedona">
+    <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
+    <img class="welcome" src="#" alt="Добро пожаловать в Седону.">
+  </section>
 
+  <section class="advantages">
+    <h2 class="advantages-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+    <p class="advantages-reasons-view">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul class="advantages-list">
+          <li class="advantages-point">
+            <h3 class="advantages-item advantages-item-accent">Настоящий<br> городок</h3>
+            <p class="advantages-reason advantages-reason-accent">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+            <img class="real-town" src="#" alt="Настоящий американский городок.">
+          </li>
+          <li class="advantages-point">
+            <h3 class="advantages-item">Небольшая<br> площадь</h3>
+            <p class="advantages-reason">Все достопримечательности<br>находятся очень близко</p>
+          </li>
+          <li class="advantages-point">
+            <h3 class="advantages-item">Красивая<br> дорога</h3>
+            <p class="advantages-reason">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+          </li>
+          <li class="advantages-point">
+            <h3 class="advantages-item">Мало <br>туристов</h3>
+            <p class="advantages-reason">Большинство едет в Гранд <br>Каньон и толпится там</p>
+          </li>
+          <li class="advantages-point">
+            <h3 class="advantages-list advantages-list-accent">Там есть<br>мост дьявола</h3>
+            <p class="advantages-reason">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+            <img class="devils-bridge" src="#" alt="Мост дьявола.">
+          </li>
+        </ul>
+  </section>
+
+  <section class="advantages">
+    <h2 class="advantages-title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
+    <p class="advantages-reasons-view">Опытный персонал и качественное обслуживание!</p>
+        <ul class="advantages-list">
+          <li class="advantages-point">
+            <h3 class="advantages-list">Жилье</h3>
+            <p class="advantages-reason">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+          </li>
+          <li>
+            <h3 class="advantages-list">Еда</h3>
+            <p class="advantages-reason">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <h3 class="advantages-list">Сувениры</h3>
+            <p class="advantages-reason">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+          </li>
+        </ul>
+  </section>
+
+  <section class="advantages">
+    <h2 class="advantages-title">Заинтересовались?</h2>
+    <p class="advantages-reasons-view">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    <a class="hotels-button wanted-button" href="index_hotels.html">Поиск гостиницы в Седоне</a>
+  </section>
 </main>
+
+  <footer class="page-footer">
+    <section class="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="no-spam">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      <form class="new-information-form" action="#" method="post">
+        <label for="new-information-email">Email</label>
+        <input class="field" placeholder="email@example.com" type="email" name="new-information-email" id="new-information-email" required>
+        <button class="button new-information-button" type="submit">
+          <span class="send">Подписаться</span>
+        </button>
+    </section>
+    <section class="contacts">
+      <ul class="networks">
+        <li class="networks-item">
+          <a class="networks-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte.</span>
+          </a>
+        </li>
+        <li class="networks-item">
+          <a class="networks-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram.</span>
+          </a>
+        </li>
+        <li class="networks-item">
+          <a class="networks-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube.</span>
+          </a>
+        </li>
+      </ul>
+      <p class="phone">+7 (812) 812-12-12</p>
+      <div class="logo-of-academy">
+        <a class="academy-link"  href="https://htmlacademy.ru/">
+          <img class="logo" src="#" alt="Логотип htmlacademy.">
+        </a>
+      </div>
+    </section>
+  </footer>
   </body>
 </html>
