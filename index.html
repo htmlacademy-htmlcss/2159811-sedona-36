@@ -36,16 +36,17 @@
         <span class="number-of-likes">12</span>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link wanted-button"  href="index_hotels.html">Хочу сюда!</a>
+        <a class="navigation-link wanted-button"  href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
 </header>
 
 <main class="main-index">
-  <section class="welcome-to-sedona">
+  <section class="hero">
     <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-    <img class="welcome" src="#" alt="Добро пожаловать в Седону.">
+    <img class="hero-mountains" src="#" alt="Красные горы в Седоне.">
+    <img class="hero-welcome" src="#" alt="Welcome to gorgerous Sedona. Because the Grand Canyon sucks!">
   </section>
 
   <section class="advantages">
@@ -107,12 +108,14 @@
     <section class="subscribe">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="no-spam">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-      <form class="new-information-form" action="#" method="post">
-        <label for="new-information-email">Email</label>
-        <input class="field" placeholder="email@example.com" type="email" name="new-information-email" id="new-information-email" required>
-        <button class="button new-information-button" type="submit">
-          <span class="send">Подписаться</span>
-        </button>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post"><!--Что писать в action?-->
+        <p class="subscribe-form-name">
+          <label class="visually-hidden" for="user-email"Ваш e-mail</label>
+        <input type="text" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
+        </p>
+        <button class="subscribe-button" type="submit">Подписаться</button>
+      </form>
+
     </section>
     <section class="contacts">
       <ul class="networks">
