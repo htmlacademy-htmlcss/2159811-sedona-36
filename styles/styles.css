@@ -20,15 +20,19 @@ body {
     font-size: 18px;
     line-height: 26px;
     color: black;
-    background-color: #82B3D3;
+    background-color: white;
     font-weight: 400;
     text-align: center
 
   }
 
+  /* Pages */
+
+    /* header*/
+
 .main-header {
   color: black;
-  background-color: white;
+  text-align: left;
   }
 
 .navigation-link {
@@ -53,44 +57,87 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-
 }
 
-.main-index {
-  background-image: url("../images/header/index-background.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
+  /* hero */
+.hero {
+  background: url("../images/header/steps.svg") no-repeat bottom;
+  background-size: 100% auto;
+  background: url("../images/header/index-background.jpg") no-repeat top;
+  background-size: 100% auto;
+  }
 
+    /* advantages */
+
+  .advantages-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .advantages-reasons-view {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  .advantages-list {
+    list-style-type: none;
+  }
+
+.real-town {
+  color: white;
+  background-color: #83B3D3;
+}
+.small-area, .few-tourists {
+  background-color: #83B3D3 12%;
 }
 
-.advantages-title, .infrastructure-title {
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
+.nice-road {
+  background-color: #83B3D3 20%;
 }
 
-.advantages-reasons-view, .infrastructure-reasons-view {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-}
-
-.advantages-item, .infrastructure-list {
+.advantages-item {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.advantages-item-accent, .advantages-reason-accent {
-  color: white;
-}
-
-.advantages-reason, .infrastructure-reason {
+.advantages-reason{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
 }
+
+    /* infrustructure */
+
+.infrastructure-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.infrastructure-reasons-view {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.infrastructure-list {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.infrastructure-reason  {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+}
+
+    /*invitation*/
 
 .invitation-title {
   font-size: 30px;
@@ -102,6 +149,12 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.subscribe {
+background-image: url("../images/footer/landscape_blure.jpg") no-repeat;
+background-size: 100% auto;
+background-color: #83B3D3;
 }
 
 .subscribe-title {
