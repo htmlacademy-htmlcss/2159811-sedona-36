@@ -7,7 +7,7 @@
   </head>
 
   <body>
-
+    <!-- Шапка -->
     <header class="main-header">
       <nav class="navigation">
         <div class="logo-of-sedona">
@@ -44,73 +44,77 @@
         </ul>
       </nav>
     </header>
+    <!-- Поисковик -->
 
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">На главную.</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
-      <section class="hotels">
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="hotels-filter-group">
-              <legend class="hotels-filter-title">Инфраструктура:</legend>
+      <div class="search">
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">На главную.</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
+        <section class="hotels">
+          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="hotels-filter-group">
+                <legend class="hotels-filter-title">Инфраструктура:</legend>
 
-              <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>
-                Бассейн
-              </label>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pool" checked>
+                  Бассейн
+                </label>
 
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Parking" checked>
-                Парковка
-              </label><label class="control">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Parking" checked>
+                  Парковка
+                </label><label class="control">
 
-                <input class="control-input" type="checkbox" name="wifi">
-                Wi-Fi
-              </label>
-          </fieldset>
+                  <input class="control-input" type="checkbox" name="wifi">
+                  Wi-Fi
+                </label>
+            </fieldset>
 
-          <fieldset class="hotels-filter-group">
-            <legend ss="hotels-filter-title">Тип Жилья:</legend>
+            <fieldset class="hotels-filter-group">
+              <legend ss="hotels-filter-title">Тип Жилья:</legend>
 
-              <label class="control">
-                <input class="control-input" type="radio" name="types" value="hotel" checked>
-                Гостиница
-              </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="types" value="hotel" checked>
+                  Гостиница
+                </label>
 
-              <label class="control">
-                <input class="control-input" type="radio" name="types" value="motel">
-                Мотель
-              </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="types" value="motel">
+                  Мотель
+                </label>
 
-              <label class="control">
-                <input class="control-input" type="radio" name="types" value="apartments">
-                Апартаменты
-              </label>
-          </fieldset>
+                <label class="control">
+                  <input class="control-input" type="radio" name="types" value="apartments">
+                  Апартаменты
+                </label>
+            </fieldset>
 
-          <fieldset class="hotels-filter-group">
-            <legend ss="hotels-filter-title" >Стоимость, p:</legend>
-              <label for="price-form">от:</label>
-              <input class="field" placeholder="0" type="number" name="price-from" id="price-form">
-              <label for="price-to">до:</label>
-              <input class="field" placeholder="9000" type="number" name="price-to" id="price-to">
-          </fieldset>
+            <fieldset class="hotels-filter-group">
+              <legend class="hotels-filter-title" >Стоимость, p:</legend>
+                <label for="price-form">от:</label>
+                <input class="field" placeholder="0" type="number" name="price-from" id="price-form">
+                <label for="price-to">до:</label>
+                <input class="field" placeholder="9000" type="number" name="price-to" id="price-to">
+            </fieldset>
 
-          <button class="button-agree" type="submit">Применить</button>
-          <button class="button-clear" type="reset">Очистить</button>
-        </form>
-      </section>
+            <button class="button-agree" type="submit">Применить</button>
+            <button class="button-clear" type="reset">Очистить</button>
+          </form>
+        </section>
+      </div>
+     <!-- результаты поиска -->
 
       <section>
       <h2 class="visually-hidden">Результаты поиска</h2>
@@ -216,15 +220,15 @@
     </main>
 
       <footer class="page-footer">
-        <section class="subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="no-spam">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <section class="subscribe-hotels">
+          <h2 class="subscribe-title-hotels">Подпишитесь на рассылку</h2>
+          <p class="no-spam-hotels">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="subscribe-form-name">
               <label class="visually-hidden" for="user-email">Ваш e-mail</label>
-            <input type="text" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
+            <input class="your-email" type="text" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
             </p>
-            <button class="subscribe-button" type="submit">Подписаться</button>
+            <button class="subscribe-button wanted-button" type="submit">Подписаться</button>
           </form>
 
         </section>
