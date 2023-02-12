@@ -1,39 +1,34 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
-  }
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
-  }
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
 
 
 body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    color: #000000;
-    background-color: #ffffff;;
-    font-weight: 400;
-    text-align: center
-
-  }
-
-  /* Pages */
-
-    /* header*/
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;;
+  font-weight: 400;
+  text-align: center
+}
 
 .main-header {
   color: black;
   text-align: left;
-  }
+}
 
 .navigation-link {
   color: black;
@@ -60,26 +55,22 @@ body {
   text-decoration: none;
 }
 
-  /* hero */
 .hero {
   background: url("../images/header/steps.svg") no-repeat bottom, url("../images/header/index-background.jpg") no-repeat top;
   background-size: 100% auto, cover;
+}
 
-  }
+.advantages-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
 
-    /* advantages */
-
-  .advantages-title {
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-  }
-
-  .advantages-reasons-view {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-  }
+.advantages-reasons-view {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
 
   .advantages-list {
     list-style-type: none;
