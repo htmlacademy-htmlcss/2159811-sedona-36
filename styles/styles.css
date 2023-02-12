@@ -19,18 +19,18 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;;
+  background-color: #ffffff;
   font-weight: 400;
-  text-align: center
+  text-align: center;
 }
 
 .main-header {
-  color: black;
+  color: #000000;
   text-align: left;
 }
 
 .navigation-link {
-  color: black;
+  color: #000000;
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
@@ -306,7 +306,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-transform: none;
+  text-decoration: none;
 }
 
 .pagination-current {
@@ -328,7 +328,7 @@ body {
 }
 
 .your-email {
-    color: #000000, 0.6;
+    color: rgba(0, 0, 0, 0.6);
     background-color: #ffffff;
     font-weight: 400;
     font-size: 18px;
