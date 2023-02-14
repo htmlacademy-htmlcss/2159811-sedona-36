@@ -27,6 +27,10 @@ body {
 .main-header {
   color: #000000;
   text-align: left;
+ }
+
+ .navigation-list {
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -173,6 +177,7 @@ body {
 }
 
 .subscribe-button{
+  font-family: inherit;
   background-color: #83b3d3;
 }
 .phone {
@@ -204,6 +209,7 @@ body {
 }
 
 .hotels-filter-title {
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -222,7 +228,15 @@ body {
   }
 
 .field {
+  font-family: inherit;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.field-price {
+  font-family: inherit;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
@@ -235,6 +249,7 @@ body {
 }
 
 .select-control {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -259,6 +274,7 @@ body {
 }
 
 .hotel-card-button {
+  font-family: inherit;
   color: #ffffff;
   background-color: #756157;
   font-weight: 700;
@@ -269,6 +285,7 @@ body {
 }
 
 .hotel-card-put-button{
+  font-family: inherit;
   color: #ffffff;
   background-color: #83b3d3;
   font-weight: 700;
@@ -279,6 +296,7 @@ body {
 }
 
 .hotel-card-putted-button {
+  font-family: inherit;
   color: #ffffff;
   background-color: #7bd54f;
   font-weight: 700;
@@ -328,6 +346,7 @@ body {
 }
 
 .your-email {
+    font-family: inherit;
     color: rgba(0, 0, 0, 0.6);
     background-color: #ffffff;
     font-weight: 400;
