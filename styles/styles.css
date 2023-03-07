@@ -14,6 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+.big-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -22,16 +31,46 @@ body {
   background-color: #ffffff;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main-header {
   color: #000000;
   text-align: left;
+  display: flex;
  }
 
- .navigation-list {
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20;
+}
+
+.logo {
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  max-width: 450px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
+
+.navigation-user {
+  display: flex;
+  max-width: 270px;
+  margin-left: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
 
 .navigation-link {
   color: #000000;
@@ -58,18 +97,25 @@ body {
   text-decoration: none;
 }
 
+.main-container{
+  flex-grow: 1;
+}
+
 .hero {
   background: url("../images/header/steps.svg") no-repeat bottom, url("../images/header/index-background.jpg") no-repeat top;
   background-size: 100% auto, cover;
 }
 
 .advantages-title {
+  margin-top: 70px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
 .advantages-reasons-view {
+  margin-top: 25px;
+  margin-bottom: 70px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -77,37 +123,79 @@ body {
 
   .advantages-list {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 .real-town {
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  height: 385px;
   color: #ffffff;
   background-color: #83b3d3;
 }
+
 .small-area, .few-tourists {
   background: rgba(131, 179, 211, 0.12);
-}
-
-.nice-road {
-  background: rgba(131, 179, 211, 0.2);
-}
-
-.devil-bridge {
-  color: #ffffff;
-  background-color: #83b3d3;
-}
-
-.advantages-item {
+  display: flex;
+  width: 400px;
+  height: 385px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.advantages-reason{
+.nice-road {
+  background: rgba(131, 179, 211, 0.2);
+  display: flex;
+  width: 400px;
+  height: 385px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.devil-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 1200px;
+  height: 385px;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.advantages-item-accent {
+  display: flex;
+  margin-top: 102px;
+  width: 400px;
+  height: 385px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-reason-accent {
+  display: flex;
+  margin-bottom: 102px;
+}
+
+.advantages-reason {
+  align-self: flex-end;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
 }
+
+.advantages-reasons-view {
+color: #333333;
+}
+
 
 .infrastructure-title {
   font-size: 30px;
@@ -181,7 +269,7 @@ body {
   background-color: #83b3d3;
 }
 .phone {
-  color: black;
+  color: #000000;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
