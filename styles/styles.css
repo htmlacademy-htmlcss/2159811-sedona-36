@@ -18,9 +18,18 @@ html {
   height: 100%;
 }
 
+*,*::before,*::after {box-sizing: border-box;}
+
+
 .big-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -28,10 +37,11 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-weight: 400;
   text-align: center;
   margin: 0;
+  display: flex;
   flex-direction: column;
   min-height: 100%;
 }
@@ -125,25 +135,23 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 1200px;
     display: flex;
     flex-wrap: wrap;
   }
+ .town {
+  width: 400px;
+  padding: 102px 85px;
+ }
 
 .real-town {
   display: flex;
-  justify-content: space-around;
-  width: 1200px;
-  height: 385px;
   color: #ffffff;
   background-color: #83b3d3;
 }
 
 .small-area, .few-tourists {
   background: rgba(131, 179, 211, 0.12);
-  display: flex;
   width: 400px;
-  height: 385px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -151,9 +159,7 @@ body {
 
 .nice-road {
   background: rgba(131, 179, 211, 0.2);
-  display: flex;
   width: 400px;
-  height: 385px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -163,29 +169,25 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  width: 1200px;
-  height: 385px;
   color: #ffffff;
   background-color: #83b3d3;
 }
 
+.advantages-item {
+margin-top: 0;
+margin-bottom: 62px;
+}
+
+
 .advantages-item-accent {
-  display: flex;
-  margin-top: 102px;
-  width: 400px;
-  height: 385px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.advantages-reason-accent {
-  display: flex;
-  margin-bottom: 102px;
-}
-
 .advantages-reason {
-  align-self: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
