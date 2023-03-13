@@ -85,7 +85,7 @@
                 </fieldset>
 
                 <fieldset class="hotels-filter-group filter-liv">
-                  <legend ss="hotels-filter-title">Тип Жилья:</legend>
+                  <legend class="hotels-filter-title">Тип Жилья:</legend>
 
                     <label class="control">
                       <input class="control-input" type="radio" name="types" value="hotel" checked>
@@ -110,8 +110,10 @@
                     <label class="field" for="price-to">до:</label>
                     <input class="field-price" placeholder="9000" type="number" name="price-to" id="price-to">
                 </fieldset>
+                <div class="chose">
                 <button class="button-agree" type="submit">Применить</button>
                 <button class="button-clear" type="reset">Очистить</button>
+                </div>
               </form>
          </section>
         </div>
@@ -158,7 +160,9 @@
               <span class="hotel-price">от 4000 р.</span>
               <a class="hotel-card-button button" href="#">Подробнее</a>
               <button class="hotel-card-put-button" type="button">В избранное</button>
+              <div class="stars-4"></div>
               <span class="rating">Рейтинг: 8,5 </span>
+
             </li>
 
             <li class="hotel-card">
@@ -199,8 +203,8 @@
           </ul>
 
           <ol class="pagination">
-            <li class="pagination-item pagination-current">
-              <a class="pagination-link">1</a>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -211,8 +215,8 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item load-more">
-              <a class="pagination-link" href="#">...</a>
+            <li class="pagination-item">
+              <a class="pagination-link load-more" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -224,7 +228,7 @@
       </main>
 
         <footer class="page-footer">
-          <section class="subscribe">
+          <section class="subscribe inner-subscribe">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="no-spam-hotels">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -241,6 +245,7 @@
               <li class="networks-item">
                 <a class="networks-link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Vkontakte.</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.116 1.804c.166-.546 0-.948-.795-.948h-2.625c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.19-.418-.738V1.804c0-.656-.184-.948-.74-.948H9.817c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513V7.76c0 .833-.153.984-.487.984-.89 0-3.055-3.21-4.34-6.885-.249-.715-.5-1.003-1.172-1.003H1.566c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.72 8.008 4.72 1.67 0 1.875-.369 1.875-1.004V11.54c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.75 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.49-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" clip-rule="evenodd"/></svg>
                 </a>
               </li>
               <li class="networks-item">
